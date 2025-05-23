@@ -1,0 +1,141 @@
+/* Juegos info */
+.game-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: flex;
+    gap: 24px;
+}
+
+.game-details-image {
+    width: 45%;
+
+}
+
+.game-details-image img {
+    width: 100%;
+    height: auto;
+}
+
+.game-details-info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.game-platform-name {
+    display: inline-block;
+    color: #f80001;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.game-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.game-release-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #494949;
+    margin-bottom: 10px;
+}
+
+.game-price {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #494949;
+    font-weight: 700;
+}
+
+.game-details-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-favorite {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid #494949;
+    border-radius: 6px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn-favorite:hover {
+    background-color: #f80001;
+    color: #fff;
+    border-color: #f80001;
+}
+
+.btn-addcar {
+    flex-grow: 1;
+    height: 60px;
+    background-color: #f80001;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-addcar:hover {
+    background-color: #df0000;
+}
+
+
+.game-description {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #494747;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: .9rem;
+}
+
+
+.game-more-info {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #494747;
+    font-size: 1rem;
+    display: grid;
+    font-size: .9rem;
+}
+
+.game-more-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.game-more-info-content:last-child {
+    border-bottom: none;
+}
+
+.game-more-info-title {
+    font-weight: 600;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="smartfix"/>
+    <meta name="rights" content="Guayaquil - Ecuador"/>
+    <meta name="description" content="Proyecto  - ESTACIÓN CLÁSICA"/>
+    <meta name="generator" content="Grupo D"/>
+    <meta name="author" content="Grupo D"/>
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/Css/registro.css" />
+    <link rel="shortcut icon" href="/recursos/logo.png" />
+    
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-sm-12" style="height: 150px;">
+        <h2 style="align-content: center;text-align: center;font-size: 38pt; background-color: #017bab; color: aliceblue;">ESTACIÓN CLÁSICA</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="login-container">
+          <div class="col-sm-6">
+            <div class="Felix">
+              <img src="/recursos/logo.png" width="800" height="525" style="border-radius: 10%;">
+            </div>
+          </div>
+          <section class="form-login">
+            <h5>Completa los siguientes campos:</h5>
+            <form id="loginForm">
+              <input class="controls" type="text" id="uid" name="uid" placeholder="Apodo"  minlength="10" maxlength="40"  required>
+              <div class="password-container">
+                  <input  type ="email" placeholder="Ingresar tu correo" required class="controls"><br>
+                   <input class="controls" type="password" id="pwd" name="pwd" placeholder=" Ingresar nueva contraseña" minlength="10" maxlength="20" required>
+              </div>
+              <div id="loginError" style="color:red; margin-bottom:1em;"></div>
+              <input class="buttons" type="submit" value="Registrarse" onclick="alert('Registrado exitosamente'); window.location.href='/usuario/login.html'"><br>
+              <hr>
+              <br>
+               <p>Ya tienes tu cuenta : <a href="/usuario/login.html">Iniciar sessión </a></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

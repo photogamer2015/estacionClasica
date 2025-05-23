@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="mi_perfil">
+<meta name="Author"  content="G-05">
+<link rel="stylesheet" href="/Css/index.css">
+<title> Mi perfil</title>
+        <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  height: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 100px;
+}
+.image .profile-pic{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+}
+span{
+  font-size: 18px;
+}
+
+.data .info{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btneditar{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+background-color:   #006fcd;
+}
+.buttons .btneditar:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  background-color: #29b817;;
+}
+.buttons .btneliminar{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+background-color: #e43a3a;
+}
+.buttons .btneliminar:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  
+}
+
+
+        </style>
+
+</head>
+ <body>
+     <header>
+            <div class="header-logo">
+                <img class="div_logo_header" src="/recursos/logo.png" alt="logo">
+            </div>
+            <h1> Mi Perfil</h1>
+            <div class="header-botones">
+                <div id="botones-registro"> 
+                    <button onclick ="window.location.href='/usuario/login.html'">Cerrar Sesión</button>
+                </div>
+                <div id="botones-pagina">
+                    <nav>
+                        <button id="btnMenu">___<br>___<br>___</button>
+                        <ul class="menu">
+                          <li><a id="inicio" href="/principal/index.html" class="tit">Inicio</a></li>
+                          <li><a id="nintendo" href="/nintendo/juegos.html" class="ni">Nintendo</a></li>
+                          <li><a id="playstation" href="/playstation/idx/PlayStation.html" class="pl">Playstation</a></li>
+                          <li><a id="xbox" href="xbox.html" class="xb">Xbox</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <section class="main">
+              
+                <div class="profile-card">
+                  
+                  <div class="data">
+                    <h2>David.com</h2>
+                  </div>
+                    <div class="data">
+                    <div class="info">
+                      <h3>Correo</h3>
+                      <span>davidg@gmail.com</span>
+                    </div>
+                    </div>
+                    <div class="data">
+                    <div class="info">
+                      <h3>Contraseña</h3>
+                      <span>*********</span>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="buttons">
+                    <a href="/usuario/editarperfil.html" class="btneditar">editar perfil</a>
+                    <a href="#" class="btneliminar">Eliminar perfil</a>
+                  </div>
+                </div>
+              </section>
+              
+        </main>
+       
+
+       <footer>
+        <div class="div_footer_header">
+            <div class="div_logo_footer">
+                <img width="70" height="70" src="/recursos/logo.png" alt="logo">
+                <p>ESTACIÓN CLÁSICA</p>
+            </div>
+            <div class="div_redes">
+                <img src="https://pbs.twimg.com/media/Gb0TPeuWIAU84Qb?format=png&name=small" alt="Facebook-logo">
+                <img src="https://pbs.twimg.com/media/Gb0TPbIXIAEadwv?format=png&name=small" alt="Instagram-logo">
+                <img src="https://pbs.twimg.com/media/Gb0TPewXQAg0Mr3?format=png&name=small" alt="x-Twitter-logo">
+            </div>
+        </div>
+        <hr>
+        <div class="div_footer_main">
+            <div>
+                <p>G-05 - Aplicaciones Web</p>
+            </div>
+        <div class="div_derechos">
+            <p>2025 © Todos los derechos reservados</p>
+            <p> G-05 - Universidad de Guayaquil</p>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

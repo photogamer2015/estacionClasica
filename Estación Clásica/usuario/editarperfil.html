@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="editar perfil">
+        <meta name="Author"  content="G-05">
+        <link rel="stylesheet" href="/Css/index.css">
+        <title> Mi perfil</title>
+        <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  height: 500px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 100px;
+}
+.image .profile-pic{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+}
+span{
+  font-size: 18px;
+}
+
+.data .info{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btnaceptar{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+background-color: #29b817;
+}
+
+.buttons .btnaceptar:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  background-color: #006fcd;
+}
+
+.buttons .btneditarr{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+background-color: #006fcd;
+}
+
+.buttons .btneditarr:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  background-color:#29b817;
+
+}
+
+h1{
+  text-align: center;
+  margin-right: 750px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <img class="div_logo_header" src="/recursos/logo.png" alt="logo">
+            </div>
+            <h1>Editar Mi Perfil</h1>
+            
+        </header>
+        <main>
+            <section class="main">
+                <div class="profile-card">
+                  
+                  <form action="" class="data info " >
+                    <label for="apodo">Ingresar un nuevo apodo :</label><br>
+                    <input  type ="text" id="apodo" placeholder="Apodo" minlength="10" maxlength="40"   required style="width: 200px; height: 50px; border-radius: 10px;"><br>
+                    <label for="correo">Ingresar un nuevo correo :</label><br>
+                    <input  type ="email" placeholder="Ingresar Correo" required style="width: 200px; height: 50px; border-radius: 10px;"><br>
+
+                    <label for="contraseña">Ingresar una nueva contraseña :</label><br>
+                    <input  type ="text" placeholder="Ingresar contraseña" minlength="10" maxlength="20" required style="width: 200px; height: 50px; border-radius: 10px;"><br>
+                  </form>
+                  <div class="buttons">
+                    <a href="#" class="btnaceptar">Aceptar</a>
+                    <a href="/usuario/perfil.html" class="btneditarr">Regresar</a>
+                  </div>
+                </div>
+              </section>
+              
+        </main>
+       
+
+       <footer>
+        <div class="div_footer_header">
+            <div class="div_logo_footer">
+                <img width="70" height="70" src="/recursos/logo.png" alt="logo">
+                <p>Reparación de Félix Jr</p>
+            </div>
+            <div class="div_redes">
+                <img src="https://pbs.twimg.com/media/Gb0TPeuWIAU84Qb?format=png&name=small" alt="Facebook-logo">
+                <img src="https://pbs.twimg.com/media/Gb0TPbIXIAEadwv?format=png&name=small" alt="Instagram-logo">
+                <img src="https://pbs.twimg.com/media/Gb0TPewXQAg0Mr3?format=png&name=small" alt="x-Twitter-logo">
+            </div>
+        </div>
+        <hr>
+        <div class="div_footer_main">
+            <div>
+                <p>G-05- Construción de Software</p>
+            </div>
+        <div class="div_derechos">
+            <p>2025 © Todos los derechos reservados</p>
+            <p> G-05 - Universidad de Guayaquil</p>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

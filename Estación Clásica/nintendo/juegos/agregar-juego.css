@@ -1,0 +1,111 @@
+.new-game-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #000;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Seccion imagen */
+.new-game-image {
+    width: 35%;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.image-upload {
+    width: 100%;
+    padding: 100px 20px;
+    position: relative;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.image-upload-icon {
+    font-size: 3rem;
+    color: #c9c7c7;
+    margin-bottom: 10px;
+}
+
+.image-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.image-label {
+    cursor: pointer;
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* Seccion formularion */
+.new-game-form {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.new-game-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.new-game-btn {
+    background-color: #f80001;
+    color: #fff;
+    width: 100%;
+    padding-block: 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.new-game-btn:hover {
+    background-color: #d70000;
+}
+

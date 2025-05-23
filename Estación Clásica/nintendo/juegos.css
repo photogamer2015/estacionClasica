@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #fff;
+}
+
+header {
+    background-color: #f80001;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #f80001;
+    background-color: #fff;
+}
+
+nav ul li a.active {
+    color: #f80001;
+    background-color: #fff;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9rem;
+}
+
+.user-actions .btn-login {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.user-actions .btn-signup {
+    background-color: #fff;
+    border: none;
+    color: #f80001;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.user-actions .btn-login:hover {
+    background-color: rgba(114, 137, 218, 0.1);
+}
+
+.user-actions .btn-signup:hover {
+    background-color: #ececec;
+}
+
+
+.page-title {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-title h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.page-title p {
+    font-size: 1.1rem;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.add-game {
+    max-width: 1200px;
+    margin-block: 20px;
+    margin-inline: auto;
+    padding: 20px;
+    text-align: right;
+}
+
+.btn-add {
+    background-color: #f80001;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #df0000;
+}
+
+
+.filters {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-group label {
+    color: #292929;
+    font-size: 0.9rem;
+}
+
+.filter-group select {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+    width: 250px;
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(248, 0, 1, 0.5);
+}
+
+.search-box button {
+    background-color: #f80001;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #df0000;
+}
+
+
+.games-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.game-image {
+    background-color: #f80001;
+}
+
+.game-image img {
+    width: 100%;
+    height: auto;
+}
+
+.game-content {
+    padding: 15px;
+    min-height: 180px;
+}
+
+.game-content h4 {
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.game-platform {
+    color: #f80001;
+    font-size: 0.8rem;
+}
+
+.game-year {
+    color: #494949;
+    font-size: 0.8rem;
+}
+
+.game-rating {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.game-actions {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.game-actions a {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+.btn-view {
+    background-color: #7289da;
+    color: #fff;
+}
+
+.btn-view:hover {
+    background-color: #5b6eae;
+}
+
+.btn-edit {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #e6b800;
+}
+
+.btn-delete {
+    background-color: #ff3333;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #e62e2e;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination a {
+    background-color: #2d2d2d;
+    color: #b8b8b8;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.pagination a.active {
+    background-color: #f80001;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #3d3d3d;
+}
+
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.copyright {
+    text-align: center;
+    color: #b8b8b8;
+    font-size: 0.9rem;
+}
+
+

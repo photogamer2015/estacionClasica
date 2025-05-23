@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Index_Estación_Clásica">
+    <meta name="Author"  content="G-05">
+    <link rel="stylesheet" href="/Css/index.css">
+    <title>Inicio</title>
+    <style>
+        main{
+            display: grid;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #id_div_video{
+            margin: 20px auto;
+            width: 45%;
+            text-align: center;
+        }
+        #id_iframe{
+            width: 230px;
+            height: 350px;
+            background-color: #e0160b;
+            border-radius: 10px;
+        }
+
+        #id_objetivopagvideo{
+        background-color: #29B817;
+            color: #ffffff;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 101% 300%;
+            padding: 10px 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000000;
+            margin-right: 190px;
+        }
+
+        #id_objetivopag{
+            background-color:#29B817;
+            color: #fff6f6;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 50% 50%;
+            padding: 20px;
+            margin-top: 20px;
+           
+        }
+        #id_objetivopag div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        
+        
+        .elemento{
+            background-color: #f0ffff;
+            border-radius: 10px;
+            padding: 50px;
+            width: 90%;
+            box-shadow: 0px 0px 10px 0px #000000;
+            font-size: 20px;
+            text-align: center;
+        }
+        .elemento #div-click{
+            cursor: pointer;
+        }
+
+        .elemento img{
+            height: 50px; 
+            width:50px;
+        }
+        
+        .sec_frase p{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+            padding: 20px;
+            color: #e3ebed;
+        }
+        @media (max-width: 1068px) {
+            
+            #id_iframe{
+                width: 100%;
+                height: 315px;
+            }
+
+            .elemento:nth-child(5){/*Hay un error que no permite mostrar una columna sola en el sgt mediaquery*/
+                width: 50%;
+                grid-column: span 2;
+                justify-self: center;
+            }
+            .elemento{
+                width: 90%;
+                font-size: 18px;
+            }
+            .elemento img{
+                height: 40px; 
+                width: 40px;
+            }
+        }
+        @media (max-width: 575px) {
+            #id_iframe{
+                width: 100%;
+                height: 215px;
+            }
+
+            .div_footer_header {
+                flex-direction: column;
+                gap: 10px; /* Ajusta el espacio entre elementos según sea necesario */
+                text-align: center;
+            }
+
+            #id_objetivopag{
+                display:grid;
+                grid-template-columns: 100%;
+            }
+        
+            .div_logo_footer{
+                justify-content: center;
+            }
+        
+            .div_derechos {
+                flex-direction: column;
+                text-align: center;
+            }
+            .elemento:nth-child(5){/*Hay un error que no permite mostrar una columna sola en el sgt mediaquery*/
+                width: 90%;
+                grid-column: span 1;
+                justify-self: center;
+            }
+
+            .elemento{
+                width: 90%;
+                font-size: 18px;
+                grid-template-columns: 1fr;
+            }
+            .elemento img{
+                height: 40px; 
+                width: 40px;
+            }
+
+            #id_div_video{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                width: 80%;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div id="id_container">
+        <header>
+            <div class="header-logo">
+                <img class="div_logo_header" src="/recursos/logo.png" alt="logo">
+            </div>
+            <h1>ESTACIÓN CLÁSICA </h1>
+            <div class="header-botones">
+                <div id="botones-registro">
+                    <button onclick="window.location.href ='/usuario/perfil.html'">Mi perfil</button>
+                    <button  onclick="window.location.href='/usuario/login.html'">Cerrar Sesión</button>
+                </div>
+                <div id="botones-pagina">
+                    <nav>
+                        <button id="btnMenu">___<br>___<br>___</button>
+                        <ul class="menu">
+                          <li><a id="nintendo" href="/nintendo/juegos.html" class="ni">Nintendo</a></li>
+                          <li><a id="playstation" href="/playstation/idx/PlayStation.html" class="pl">Playstation</a></li>
+                          <li><a id="xbox" href="/xbox/juegos.html" class="xb">Xbox</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <div id="id_div_video">
+                <div id="id_objetivopagvideo">
+                    <p style="text-align: center; margin-top: 60px; margin-right: 30px; text-align: justify; font-size: 18px;"><span style="font-weight: 800; font-size: 25px;">Compra tus juegos clásico</span><br><br>
+                      ¡Bienvenidos, amantes de los videojuegos retro! Revive la magia de las eras doradas con nuestra increíble colección de clásicos.<br> Sumérgete en las aventuras atemporales de Nintendo, donde fontaneros bigotudos desafían dragones y princesas esperan ser rescatadas.<br> Experimenta la revolución gráfica y las narrativas envolventes que definieron la PlayStation, transportándote a mundos llenos de misterio y emoción. Y siente la adrenalina de las intensas batallas y las carreras de alta velocidad que hicieron de Xbox un nombre legendario.</p>
+                
+                <video controls id="id_iframe">
+                    <source src="/recursos/arcade.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+            <div id="id_objetivopag">
+                <div class="grid_objet_pag">
+                    <img style="height:400px; width:400px; margin-left: 25px;" src="/recursos/mariobros.png" alt="logo">
+                </div>
+                <div class="grid_objet_pag">
+                    <p><span style="font-size: 50px;">Quienes Somos:</span><br><br>Sumérgete en el encanto pixelado de Nintendo, desde las aventuras icónicas en 8 bits hasta las inolvidables sagas que definieron generaciones. Viaja en el tiempo con nuestra increíble selección de juegos de Arcade, donde la acción pura y los desafíos adictivos te esperan para romper récords. Y redescubre la revolución que trajo Sony PlayStation, con sus historias profundas y mundos inmersivos que cambiaron el panorama del entretenimiento interactivo. ¡No busques más! Tu búsqueda de tesoros retro termina aquí. Explora nuestra colección y llévate a casa esos clásicos atemporales que encendieron tu pasión por los videojuegos. ¡La nostalgia nunca ha sido tan divertida! </p>    
+                </div>
+            </div> 
+            
+        </main>
+        <footer>
+                <div class="div_footer_header">
+                    <div class="div_logo_footer">
+                        <img width="70" height="70" src="/recursos/logo.png" alt="logo">
+                        <p>ESTACIÓN CLÁSICA</p>
+                    </div>
+                    <div class="div_redes">
+                        <img src="https://pbs.twimg.com/media/Gb0TPeuWIAU84Qb?format=png&name=small" alt="Facebook-logo">
+                        <img src="https://pbs.twimg.com/media/Gb0TPbIXIAEadwv?format=png&name=small" alt="Instagram-logo">
+                        <img src="https://pbs.twimg.com/media/Gb0TPewXQAg0Mr3?format=png&name=small" alt="x-Twitter-logo">
+                    </div>
+                </div>
+                <hr>
+                <div class="div_footer_main">
+                    <div>
+                        <p>G-05- Aplicaciones Web</p>
+                    </div>
+                <div class="div_derechos">
+                    <p>2025 © Todos los derechos reservados</p>
+                    <p> G-05 - Universidad de Guayaquil</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

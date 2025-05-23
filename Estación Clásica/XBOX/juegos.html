@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juegos de Xbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #107C10;
+      padding: 1em 2em;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .auth-buttons button {
+      margin-left: 10px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      background: white;
+      color: #107C10;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .auth-buttons button:hover {
+      background: #e1f5e1;
+    }
+
+    .main-title {
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
+
+    .main-title h2 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+
+    .main-title p {
+      color: #555;
+    }
+
+    .filtros {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .filtros select, .filtros input {
+      margin: 5px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width: 140px;
+    }
+
+    .filtros button {
+      padding: 8px 14px;
+      background: #107C10;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .filtros button:hover {
+      background: #0d6c0d;
+    }
+
+    .add-new {
+      text-align: center;
+      margin: 1.5em 0;
+    }
+
+    .add-new button {
+      background: #107C10;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .add-new button:hover {
+      background: #0c5a0c;
+    }
+
+    .game-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+      padding: 1em;
+    }
+
+    .game-card {
+      background: white;
+      width: 230px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 1em;
+      border-top: 1px solid #eee;
+    }
+
+    .game-info h3 {
+      margin: 0 0 0.4em;
+      font-size: 17px;
+      color: #222;
+    }
+
+    .game-info p {
+      font-size: 14px;
+      margin: 2px 0;
+      color: #666;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-around;
+      padding: 0.8em 0;
+      background: #f9f9f9;
+    }
+
+    .actions button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #107C10;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .actions button:hover {
+      color: #0c5a0c;
+    }
+    footer {
+  margin-top: 3em;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-banner {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5em 2em;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-banner a {
+  color: #0f0;
+  text-decoration: underline;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  background: #f2f2f2;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 200px;
+  margin-bottom: 1em;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.6em;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background: #e6e6e6;
+  padding: 1em 2em;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.footer-left span,
+.footer-right a {
+  margin-right: 15px;
+  color: #444;
+}
+
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-right a {
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  background: #b4f000;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.back-to-top:hover {
+  background: #94d100;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MICROSOFT</h1>
+  <div class="auth-buttons">
+    <button onclick="window.location.href='/usuario/editarperfil.html'">Editar perfil</button>
+    <button onclick="window.location.href='/principal/index.html'">Menu Principal</button>
+    <button onclick="window.location.href='/usuario/login.html'">Cerrar Sesión</button>
+  </div>
+</header>
+
+<div class="main-title">
+  <h2>Juegos de Xbox</h2>
+  <p>Explora nuestra colección de videojuegos para Xbox. Encuentra tus favoritos y descubre nuevos títulos.</p>
+</div>
+
+<div class="filtros">
+  <select>
+    <option>Plataforma</option>
+  </select>
+  <select>
+    <option>Género</option>
+  </select>
+  <select>
+    <option>Año</option>
+  </select>
+  <input type="text" placeholder="Buscar juegos...">
+  <button>Buscar</button>
+</div>
+
+<div class="add-new">
+  <button>+ Añadir Nuevo Juego</button>
+</div>
+
+<div class="game-grid">
+
+  <div class="game-card">
+    <img src="HALO.jpg" alt="Halo Combat Evolved">
+    <div class="game-info">
+      <h3>Halo: Combat Evolved</h3>
+      <p>Xbox</p>
+      <p>2001</p>
+    </div>
+    <div class="actions">
+      <button>Eliminar</button>
+      <button>Actualizar</button>
+      <button>🛒</button>
+      <button>⭐</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <img src="HALFLIFE.jpg" alt="Half-Life 2">
+    <div class="game-info">
+      <h3>Half-Life 2</h3>
+      <p>Xbox</p>
+      <p>2004</p>
+    </div>
+    <div class="actions">
+      <button>Eliminar</button>
+      <button>Actualizar</button>
+      <button>🛒</button>
+      <button>⭐</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <img src="GEAR.png" alt="Gears of War 3">
+    <div class="game-info">
+      <h3>Gears of War 3</h3>
+      <p>Xbox 360</p>
+      <p>2011</p>
+    </div>
+    <div class="actions">
+      <button>Eliminar</button>
+      <button>Actualizar</button>
+      <button>🛒</button>
+      <button>⭐</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <img src="MINE.png" alt="Minecraft Xbox Edition">
+    <div class="game-info">
+      <h3>Minecraft Xbox Edition</h3>
+      <p>Xbox 360</p>
+      <p>2009</p>
+    </div>
+    <div class="actions">
+      <button>Eliminar</button>
+      <button>Actualizar</button>
+      <button>🛒</button>
+      <button>⭐</button>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-banner">
+    <p>
+      *Los descuentos se basan en el precio de Microsoft Store y no se pueden combinar con otras ofertas ni se pueden canjear por dinero en efectivo. Las ofertas de descuento excluyen títulos dentro de los 30 días siguientes al lanzamiento y no están disponibles con títulos seleccionados.<br>
+      Los títulos, el número, las características y la disponibilidad de los juegos varían con el tiempo y según la región, el plan de Game Pass y la plataforma. Obtén más información sobre las regiones compatibles en <a href="https://www.xbox.com/regions" target="_blank">xbox.com/regions</a>.
+    </p>
+  </div>
+
+  <div class="footer-main">
+    <div class="footer-column">
+      <h4>Examinar</h4>
+      <ul>
+        <li><a href="#">PC Game Pass</a></li>
+        <li><a href="#">Juegos de PC Game Pass</a></li>
+        <li><a href="#">App Xbox en PC Windows</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="#">Soporte técnico de Xbox</a></li>
+        <li><a href="#">Comentarios</a></li>
+        <li><a href="#">Estándares de la comunidad</a></li>
+        <li><a href="#">Advertencia sobre ataques fotosensibles</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Microsoft Store</h4>
+      <ul>
+        <li><a href="#">Cuenta de Microsoft</a></li>
+        <li><a href="#">Soporte técnico</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Seguimiento de pedidos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <span>🌐 Español (Ecuador)</span>
+      <span>🔘 Tus opciones de privacidad</span>
+      <span><a href="#">Privacidad del consumidor</a></span>
+    </div>
+    <div class="footer-right">
+      <a href="#">Contact Microsoft</a>
+      <a href="#">Privacy & Cookies</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Trademarks</a>
+      <a href="#">About our ads</a>
+      <span>© Microsoft 2025</span>
+    </div>
+    <a href="#" class="back-to-top">⬆</a>
+  </div>
+</footer>
+
+</body>
+</html>

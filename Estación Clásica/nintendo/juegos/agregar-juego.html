@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../juegos.css" />
+    <link rel="stylesheet" href="agregar-juego.css" />
+    <script
+      src="https://kit.fontawesome.com/e453bc4ba2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Agregar Juego</title>
+  </head>
+  <body>
+    <!-- Navegacion -->
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html">Estación Clásica</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+          </ul>
+        </nav>
+        <div class="user-actions">
+          <a href="" class="btn-login">Iniciar Sesión</a>
+          <a href="" class="btn-signup">Registrarse</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="new-game-container">
+      <div class="new-game-image">
+        <h4>Imagen del Juego</h4>
+        <div class="image-upload">
+          <div class="image-upload-icon">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+          <input class="image-input" type="file" id="image-upload" />
+          <label class="image-label" for="image-upload">Subir Imagen</label>
+        </div>
+      </div>
+
+      <form class="new-game-form">
+        <h4>Descripción del Juego</h4>
+        <!-- nombre -->
+        <div>
+          <label class="new-game-name" for="name">Nombre del juego</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Nombre del juego"
+            required
+          />
+        </div>
+        <!-- descripcion -->
+        <div>
+          <label class="new-game-description" for="description"
+            >Descripción</label
+          >
+          <textarea
+            id="description"
+            placeholder="Descripción del juego"
+            required
+          ></textarea>
+        </div>
+        <!-- Fecha de lanzamiento -->
+        <div>
+          <label class="new-game-release-date" for="release-date"
+            >Fecha de lanzamiento</label
+          >
+          <input
+            type="text"
+            id="release-date"
+            placeholder="Fecha de lanzamiento"
+            required
+          />
+        </div>
+        <!-- precio -->
+        <div>
+          <label class="new-game-price" for="price">Precio</label>
+          <input
+            type="text"
+            id="price"
+            placeholder="Precio del juego"
+            required
+          />
+        </div>
+        <!-- tamaño del juego -->
+        <div>
+          <label class="new-game-size" for="size">Tamaño del juego</label>
+          <input
+            type="text"
+            id="size"
+            placeholder="Tamaño del juego"
+            required
+          />
+        </div>
+        <!-- Categorias -->
+        <div>
+          <label class="new-game-categories" for="categories">Categorías</label>
+          <input
+            type="text"
+            id="categories"
+            placeholder="Categorías del juego"
+            required
+          />
+        </div>
+        <!-- numero de jugadores -->
+        <div>
+          <label class="new-game-players" for="players"
+            >Número de jugadores</label
+          >
+          <input
+            type="text"
+            id="players"
+            placeholder="Número de jugadores"
+            required
+          />
+        </div>
+        <!-- modo de juego -->
+        <div>
+          <label class="new-game-mode" for="mode">Modo de juego</label>
+          <input type="text" id="mode" placeholder="Modo de juego" required />
+        </div>
+        <!-- distribuidor -->
+        <div>
+          <label class="new-game-distributor" for="distributor"
+            >Distribuidor</label
+          >
+          <input
+            type="text"
+            id="distributor"
+            placeholder="Distribuidor del juego"
+            required
+          />
+        </div>
+        <!-- idiomas -->
+        <div>
+          <label class="new-game-languages" for="languages">Idiomas</label>
+          <input
+            type="text"
+            id="languages"
+            placeholder="Idiomas del juego"
+            required
+          />
+        </div>
+
+        <button class="new-game-btn">¡Todo listo!</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy; 2025 Estación Clásica. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

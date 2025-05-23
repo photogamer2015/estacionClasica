@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="juegos.css" />
+    <script
+      src="https://kit.fontawesome.com/e453bc4ba2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Nintendo</title>
+  </head>
+  <body>
+    <!-- Navegacion -->
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1>Estación Clásica</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/principal/index.html" class="active">Menú Principal</a></li>
+          </ul>
+        </nav>
+        <div class="user-actions">
+          <a href="/usuario/editarperfil.html" class="btn-signup">Editar Perfil</a>
+          <a href="/usuario/login.html" class="btn-signup">Cerrar Sesión</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <section class="page-title">
+      <h2>Juegos Clásicos de Nintendo Switch</h2>
+      <p>
+        Explora nuestra colección de videojuegos para Nintendo. Encuentra tus
+        favoritos y descubre nuevos títulos.
+      </p>
+    </section>
+
+    <!-- Boton añadir juego -->
+    <div class="add-game">
+      <a href="juegos/agregar-juego.html" class="btn-add"
+        >+ Añadir Nuevo Juego</a>
+    </div>
+
+    <!-- Filtros -->
+    <section class="filters">
+      <div class="filter-group">
+        <label for="genre">Género:</label>
+        <select id="genre">
+          <option value="all">Todos</option>
+          <option value="action">Acción</option>
+          <option value="adventure">Aventura</option>
+          <option value="carreras">Carreras</option>
+          <option value="sports">Deportes</option>
+          <option value="strategy">Estrategia</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="year">Año:</label>
+        <select id="year">
+          <option value="all">Todos</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="older">Anterior</option>
+        </select>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar juegos..." />
+        <button>Buscar</button>
+      </div>
+    </section>
+
+    <!-- Lista de Juegos -->
+    <section class="games-container">
+      <div class="games-grid">
+        <!-- 1 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Nintendo%2064/1920x1080_classicgames_zeldaocarina"
+              alt="imagen"
+            />
+          </div>
+          <div class="game-content">
+            <h4>The Legend of Zelda</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo Switch</span>
+              <span class="game-year">2010</span>
+            </div>
+            <div class="game-rating">★★★★★ (4.9)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Super%20Nintendo%20Entertainment%20System/1920x1080_classicgames_snes_supermarioworld"
+              alt="imagen"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Super Mario World</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2009</span>
+            </div>
+            <div class="game-rating">★★★★☆ (4.2)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Super%20Nintendo%20Entertainment%20System/1920x1080_classicgames_snes_supertennis"
+              alt="imagen"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Super Tenis</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2007</span>
+            </div>
+            <div class="game-rating">★★★★★ (4.8)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Nintendo%2064/1920x1080_classicgames_banjokazooie"
+              alt="imagen juego"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Banjo Kazooie</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2004</span>
+            </div>
+            <div class="game-rating">★★★★★ (4.7)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Super%20Nintendo%20Entertainment%20System/1920x1080_classicgames_snes_dkc"
+              alt="imagen juego"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Donkey Kong Country</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2010</span>
+            </div>
+            <div class="game-rating">★★★★☆ (4.5)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Nintendo%2064/N64_Blast_Corps"
+              alt="imagen juego"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Blast Corps</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2003</span>
+            </div>
+            <div class="game-rating">★★★★★ (4.9)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Nintendo%2064/1920x1080_classicgames_n64_drmario"
+              alt="imagen juego"
+            />
+          </div>
+          <div class="game-content">
+            <h4>Dr. Mario 64</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2004</span>
+            </div>
+            <div class="game-rating">★★★★☆ (4.6)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="https://assets.nintendo.com/image/upload/e_trim/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/switch/online-service/classics/Nintendo%2064/1920x1080_classicgames_fzerox"
+              alt="imagen juego"
+            />
+          </div>
+          <div class="game-content">
+            <h4>F-Zero X</h4>
+            <div class="game-info">
+              <span class="game-platform">Nintendo</span>
+              <span class="game-year">2000</span>
+            </div>
+            <div class="game-rating">★★★★☆ (4.4)</div>
+            <div class="game-actions">
+              <a href="juegos/juego-info.html" class="btn-view"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a href="juegos/agregar-juego.html" class="btn-edit"
+                ><i class="fa-solid fa-pen"></i
+              ></a>
+              <a href="#" class="btn-delete"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy; 2025 Estación Clásica. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
